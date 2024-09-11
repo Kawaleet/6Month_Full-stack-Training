@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1> Forms </h1>
+        <hr>
+        <br><br>
+        Name 
+            <input type="text">
+        <br><br>
+        Exam Date and Time
+            <input type="datetime-local">
+        <br><br>
+        Roll Number
+            <input type="number" min="1" max="30">
+            <br><br>
+        City
+            <select>
+                <option>Jalandhar</option>
+                <option>chandigarh</option>
+                <option>ludhiana</option>
+                <option selected disabled>Select one </option>
+            </select>
+            <br><br>
+        State
+        <input type="text" list="State">
+        <datalist id="State">
+            <option>Punjab</option>
+            <option>Delhi</option>
+            <option>Kolkata</option>
+            <option>Tamil Nadu</option>
+        </datalist>
+        <br><br>
+        Image
+        <input type="file">
+    </body>
+</html>
