@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple-images</title>
+    <style>
+        .div1{
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="pics/img1.webp" height="200px" id="id1" >
+    </div>
+    <div class="div2">
+        <img src="pics/img2.webp" height="200px"  onmouseover="changeImg()" onmouseout="changeImg1()">
+        <img src="pics/img3.jpg" height="200px"   onmouseover="changeImg2()" onmouseout="changeImg3()">
+        <img src="pics/img4.webp" height="200px"  onmouseover="changeImg4()" onmouseout="changeImg5()">
+        <img src="pics/img5.webp" height="200px"  onmouseover="changeImg6()" onmouseout="changeImg7()">
+    </div>
+
+    <script>
+        function changeImg(){
+            document.getElementById("id1").src="pics/img2.webp"
+
+        }
+        function changeImg1(){
+            document.getElementById("id1").src="pics/img1.webp"
+
+        }
+        function changeImg2(){
+            document.getElementById("id1").src="pics/img3.jpg"
+
+        }
+        function changeImg3(){
+            document.getElementById("id1").src="pics/img1.webp"
+
+        }
+        function changeImg4(){
+            document.getElementById("id1").src="pics/img4.webp"
+
+        }
+        function changeImg5(){
+            document.getElementById("id1").src="pics/img1.webp"
+
+        }
+        function changeImg6(){
+            document.getElementById("id1").src="pics/img5.webp"
+
+        }
+        function changeImg7(){
+            document.getElementById("id1").src="pics/img1.webp"
+
+        }
+    </script>
+</body>
+</html>

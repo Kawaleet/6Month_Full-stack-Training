@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculations</title>
+    <style>
+       .btn {
+        margin: 2%;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <div>A:<input id="id1"></div>
+        <div>B:<input id="id2"></div>
+    </div>
+    <div class="btn">
+    <button onclick="sum()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+    </div>
+    <div id="id3"></div>
+<script>
+    function sum() {
+        var a=Number(document.getElementById("id1").value ) 
+        var b=parseInt(document.getElementById("id2").value)
+        var c=a+b
+        document.getElementById("id3").innerHTML=`A is ${a} <br>B is ${b} <br>Operator is + <br>The result is ${c}`    
+         }
+    function minus() {
+        var a=Number(document.getElementById("id1").value ) 
+        var b=parseInt(document.getElementById("id2").value)
+        var c=a-b
+        document.getElementById("id3").innerHTML=`A is ${a} <br>B is ${b} <br>Operator is - <br>The result is ${c}` 
+    }
+    function multiply() {
+        var a=Number(document.getElementById("id1").value ) 
+        var b=Number(document.getElementById("id2").value)
+        var c=a*b
+        document.getElementById("id3").innerHTML=`A is ${a} <br>B is ${b} <br>Operator is * <br>The result is ${c}` 
+    }
+    function divide() {
+        var a=Number(document.getElementById("id1").value ) 
+        var b=Number(document.getElementById("id2").value)
+        var c=a/b
+        document.getElementById("id3").innerHTML=`A is ${a} <br>B is ${b} <br>Operator is / <br>The result is ${c}` 
+    }
+</script>
+</body>
+</html>

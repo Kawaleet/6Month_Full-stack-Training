@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect - Nature and Adventure</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: white;
+        }
+
+        /* Parallax sections */
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .parallax-1 {
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+        }
+
+        .parallax-2 {
+            background-image: url('https://images.unsplash.com/photo-1518593922804-bf0d5b5873c2');
+        }
+
+        .parallax-3 {
+            background-image: url('https://images.unsplash.com/photo-1533067640486-320279a6e952');
+        }
+
+        /* Content sections */
+        .content {
+            padding: 60px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Parallax Section 1: Mountains -->
+    <div class="parallax parallax-1">
+        <div class="content">
+            <h1>Discover the Wonders of Nature</h1>
+            <h2>The Majestic Mountains</h2>
+            <p>Nature's grandeur is best captured in the towering mountains that touch the skies. They symbolize strength, resilience, and the timeless beauty of the Earth. Whether you're hiking through rocky trails or skiing down snowy slopes, the mountains offer an exhilarating escape into the wild.</p>
+            <h3>Hiking Through the Trails</h3>
+            <p>Walking through mountain trails gives you a front-row seat to breathtaking views and fresh air. Every step brings a new perspective, from lush forests to panoramic vistas, offering a sense of tranquility and accomplishment.</p>
+        </div>
+    </div>
+
+    <!-- Parallax Section 2: Forests -->
+    <div class="parallax parallax-2">
+        <div class="content">
+            <h2>Embrace the Serenity of Forests</h2>
+            <p>The forest is a place where time seems to stand still. With towering trees, gentle streams, and wildlife all around, it’s a haven for those seeking peace and quiet. The rich greenery and cool shade make forests ideal for camping, photography, or simply unwinding.</p>
+            <h3>Wildlife Watching</h3>
+            <p>The stillness of the forest makes it the perfect setting for observing animals in their natural habitat. Whether you're watching a deer gracefully move through the trees or spotting birds in flight, nature reveals its wonders to those who watch quietly.</p>
+        </div>
+    </div>
+
+    <!-- Parallax Section 3: Waterfalls -->
+    <div class="parallax parallax-3">
+        <div class="content">
+            <h2>Explore the Power of Waterfalls</h2>
+            <p>Waterfalls are a stunning display of nature's power and beauty. The sound of water crashing against rocks and the mist rising into the air create an unforgettable atmosphere. Adventure seekers often find themselves drawn to waterfalls for the thrill of the journey.</p>
+            <h3>Adventure by the Water</h3>
+            <p>The area around waterfalls often offers the perfect playground for adventurers. From challenging hikes to thrilling water sports like kayaking, the experience is as dynamic as the water itself.</p>
+        </div>
+    </div>
+
+</body>
+</html>

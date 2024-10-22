@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom-div</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">Enter color </div>
+            <div class="col-md-3"><input id="id1"> </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3">Enter height </div>
+            <div class="col-md-3"><input id="id2"> </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3">Enter width </div>
+            <div class="col-md-3"><input id="id3"> </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3">Enter background-color </div>
+            <div class="col-md-3"><input id="id4"></div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3">Enter text </div>
+            <div class="col-md-3"><input id="id5"> </div>
+        </div>
+        
+        <button class="bg-light mt-5" onclick="div()">Create</button>
+        <div id="container"></div>
+    <script>
+        function div(){
+        var color=document.getElementById("id1").value
+        var height=document.getElementById("id2").value
+        var width=document.getElementById("id3").value
+        var bgcolor=document.getElementById("id4").value
+        var text=document.getElementById("id5").value
+        console.log(123);
+
+        document.getElementById("container").style.color=color;
+        document.getElementById("container").style.height=height;
+        document.getElementById("container").style.width=width;
+        document.getElementById("container").style.backgroundColor=bgcolor;
+        document.getElementById("container").innerHTML=text;  
+        }
+        
+    </script>
+    <script src="custom-div.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> 

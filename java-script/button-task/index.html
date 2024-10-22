@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-primary">
+                <p id="id1">Kawaljeet Kaur</p>
+        </div>
+        <div class="col bg-secondary" id="id2"></div>
+    </div>
+    <div class="mt-5 d-sm-flex justify-content-center ">
+    <button class="me-3" onclick="cutData()">Cut</button>
+    <button class="me-3" onclick="copyData()">Copy</button>
+    <button class="me-3" onclick="pasteData()">Paste</button>
+    <button class="me-3" onclick="removeData()">Remove</button>
+    </div>
+    <script>
+    
+        function cutData(){
+            <!--Data store in clipboard-->
+            clipboard=document.getElementById("id1").innerText;
+            <!--Data cut when you click on cut button-->
+            document.getElementById("id1").innerText="";
+        }
+        function copyData(){
+            <!--Data store in clipboard-->
+            clipboard=document.getElementById("id1").innerText;
+        }
+        function pasteData(){
+            <!--paste the data of div1 to div2-->
+            document.getElementById("id2").innerText=clipboard;
+        }
+        function removeData() {
+            <!--removes the data from div2-->
+            // Clear the content of div2
+            document.getElementById('id2').innerText = '';
+        }
+    </script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

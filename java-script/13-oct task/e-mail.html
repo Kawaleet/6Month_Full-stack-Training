@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+      span{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+    <form action="submit.html" onsubmit="return checkForm()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><h1>LOGIN FORM</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 mt-3"><label>E-mail:</label></div>
+            <div class="col-md-6 mt-3"><input type="email" placeholder="Enter your E-mail" id="id1">
+                <span id="error"></span>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-1 mt-3"><label>Password:</label></div>
+            <div class="col-md mt-3"><input type="password" placeholder="*********" id="id2">
+            <span id="pswd"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md mt-4 "><button>Submit</button></div>
+        </div>
+    </div>
+    <script>
+        function checkForm(){
+           var x=document.getElementById("id1").value.trim()
+           var pattern=/^[a-zA-Z0-9\.\_\-]+\@+[a-zA-Z]+\.+[a-zA-Z]{2,3}$/
+           var y=document.getElementById("id2").value.trim()
+           var pattern=/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8}$/
+           if(pattern.test(x)){
+            document.getElementById("error").innerHTML=""
+           }
+           else  if (pattern.test(y)){
+                document.getElementById("pswd").innerHTML="";
+            }
+            else{
+                document.getElementById("error").innerHTML="Please enter valid email"
+                document.getElementById("pswd").innerHTML="Password should be in a Lowercase, Uppercase, Number and Symbol"
+                return false
+            }   
+            
+        }        
+
+    </script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

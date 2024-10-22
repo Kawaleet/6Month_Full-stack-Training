@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change-div</title>
+    <style>
+
+        .div1 {
+            background-color: black;
+            height: 400px;
+            width: 400px;
+            margin-top: 4%;
+        }
+        button {
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        A:<input id="id1">
+    </div>
+    <div>
+        B:<input id="id2">
+    </div>
+    <button onclick="change()"> Change</button>
+    <div class="div1" id="output"></div>
+
+    <script>
+        function change() {
+            var a=Number(document.getElementById("id1").value);
+            var b=Number(document.getElementById("id2").value);
+            if(a<b) {
+                document.getElementById("output").style.backgroundColor="pink";
+            }
+            else if(a>b) {
+                document.getElementById("output").style.backgroundColor="yellow";
+            }
+            else {
+                document.getElementById("output").style.backgroundColor="green";
+            }
+        }
+    </script>
+</body>
+</html>

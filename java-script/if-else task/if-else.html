@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifelse</title>
+</head>
+<body>
+    <div>
+        Age:<input id="id1">
+    </div>
+    <button style="margin-top: 2%;" onclick="age()"> check </button>
+    <div id="output"></div>
+
+    <script>
+        function age() {
+            var age=document.getElementById("id1").value;
+            if(age<=18) {
+              //  console.log("Invalid");//
+              document.getElementById("output").innerHTML="Invalid";
+            }
+              else {
+                document.getElementById("output").innerHTML="Valid";
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

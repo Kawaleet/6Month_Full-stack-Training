@@ -1,0 +1,122 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: skyblue;
+}
+
+/* Road styling */
+.road {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-color: gray;
+    top: 50%;
+}
+
+/* Car container */
+.car {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 220px;
+    height: 80px;
+    animation: moveCar 20s linear infinite;
+}
+
+/* Car top part */
+.car-top {
+    width: 120px;
+    height: 40px;
+    background-color: #ff6347;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+
+/* Car body */
+.car-body {
+    width: 220px;
+    height: 60px;
+    background-color: #ff4500;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Windows styling */
+.window {
+    width: 40px;
+    height: 20px;
+    background-color: #add8e6;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+}
+
+.front-window {
+    left: 60px;
+}
+
+.back-window {
+    left: 120px;
+}
+
+/* Bumper styling */
+.bumper {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+    top: 30px;
+}
+
+.front-bumper {
+    left: 5px;
+}
+
+.back-bumper {
+    right: 5px;
+}
+
+/* Car wheels */
+.wheel {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 5%;
+    position: absolute;
+    bottom: -10px;
+    border: 5px double #f4f1f1;
+}
+
+.front-wheel {
+    left: 30px;
+    animation: movewheel 20s linear infinite;
+
+}
+
+.back-wheel {
+    right: 30px;
+    animation: movewheel 20s linear infinite;
+
+}
+
+/* Keyframe animation for moving the car */
+@keyframes moveCar {
+    0% {
+        right: -220px;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+@keyframes movewheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(3600deg);
+    }
+}

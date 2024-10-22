@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-image: url(image_link/a.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100VH;
+}
+.header {
+    background-color: #283e4a;
+    height: 80px;
+    background-attachment: fixed;
+}
+.logo{
+    height: 10px;
+    margin-left: 10%;
+    margin-top: 1.5%;
+    float: left;
+    
+}
+.sign{
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top:2% ;
+    margin-right: 2%;
+   
+}
+.join{
+    float: right;
+    color: white;
+    margin-left: 2%;
+    border-style: solid;
+    margin-top:1.5% ;
+    margin-right: 10%;
+    font-size: 20px;
+    padding: 0.5%;
+}
+.contain{
+   height: 300px;
+   width: 500px;
+   background-color:#d3d2d0;
+   opacity: 90%;
+   margin-left: 30%;
+   margin-top: 5%;
+}
+#im1 {
+    height: 60px;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.main {
+    height: 30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+    outline: none;
+    border: 2px;
+}
+.btn {
+    height: 30px;
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 10%;
+    background-color:#256ea9;
+    outline: none;
+    border: 2px;
+    
+}
+.link1 {
+    color: #2072b0;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Arial,sans-serif;
+    font-weight: bolder;
+    margin-left: 40%;
+    
+    
+    
+}
+.link2 {
+    color: #2072b0;
+    text-decoration:none;
+    font-size: 11px;
+    font-family: Arial,sans-serif;
+    font-weight: bolder;
+    
+    
+    
+
+}
+p {
+    float: left;
+    margin-left: 39%;
+    color: #7a7d7f;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    margin-top: 1%;
+    
+    
+    
+   
+}
+.footer {
+    background-color: #202020;
+    height: 50px;
+    width: 100%;
+    margin-top: 13%;
+    
+}
+#h4 {
+    color: white;
+    float: left;
+    margin-left: 0%;
+    margin-top: 0.5%;
+
+}
+
+h4 {
+    color: white;
+    float: left;
+    margin-left: 0%;
+    margin-top: 0.5%;
+    position: relative;
+    left: 18%;
+    margin-left: 2%;
+
+}
+#h5 {
+    color: black;
+    float: left;
+    background-color: white;
+    margin-left: 0.02%;
+    margin-top: 0.5%;
+    position: relative;
+    left: 18%;
+}

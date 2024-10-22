@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    
+}
+body {
+    background-image: url('images/bg.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.car {
+    padding: 0%;
+    height: 150px;
+    margin-left: 70%;
+    position: relative;
+    top: 75%;
+    left: 0%;
+    animation: movecar 10s alternate alternate;
+}
+.wheel {
+    height: 60px;
+    
+}
+.front-wheel {
+    float: left;
+    position: relative;
+    bottom: 120%;
+    margin-left: 17%;
+    animation: movewheel 10s linear alternate infinite;
+
+    
+    
+    
+}
+.back-wheel {
+    float: left;
+    margin-left: 38.5%;
+    position: relative;
+    bottom: 120%;
+    margin-right: 5 %;
+    animation: movewheel 20s linear alternate infinite;
+
+   
+
+}
+@keyframes moveCar {
+    0% {
+        right: 100vw;
+    }
+    100% {
+        left: -100px;
+    }
+
+}
+@keyframes movewheel {
+    from {
+       
+        transform: rotate(0deg);
+    }
+    to {
+        
+        transform: rotate(-7200deg);
+    }
+}

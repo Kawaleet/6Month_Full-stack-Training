@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    Contact: <input id="contact" onblur="hit()">
+    <span id="error"></span>
+    <script>
+        function hit(){
+            var email=document.getElementById("contact").value
+            // console.log(email);
+            var pattern=/^[6-9]{1}[0-9]{9}$/
+            if(pattern.test(email)){
+                document.getElementById("error").innerHTML=""
+                //remove error if valid email
+            }else{
+                document.getElementById("error").innerHTML="Please enter valid email"
+                //add error if invalid email
+            }
+        }
+    </script>
+</body>
+</html>

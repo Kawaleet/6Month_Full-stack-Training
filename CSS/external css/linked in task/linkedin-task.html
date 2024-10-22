@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Drawing with HTML & CSS</title>
+    <style>
+        .car {
+            width: 200px;
+            height: 100px;
+            background-color: #f5a623; /* Yellow color */
+            border-radius: 30px 30px 15px 15px;
+            position: relative;
+        }
+
+        /* Windows */
+        .car::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 25px;
+            width: 50px;
+            height: 60px;
+            background-color: #686868;
+            border-radius: 5px;
+        }
+
+        .car::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            width: 50px;
+            height: 60px;
+            background-color: #686868;
+            border-radius: 5px;
+        }
+
+        /* Car Door */
+        .door {
+            position: absolute;
+            left: 70px;
+            top: 20px;
+            width: 60px;
+            height: 50px;
+            background-color: #f5a623;
+            border: 2px solid #d98200;
+            border-radius: 5px;
+        }
+
+        /* Wheels */
+        .wheel {
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20px;
+        }
+
+        .wheel:before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .wheel-front {
+            left: 20px;
+           animation: rotateWheels 10s infinite linear;
+
+        }
+
+        .wheel-back {
+            right: 20px;
+           animation: rotateWheels 10s infinite linear;
+
+        }
+        @keyframes rotateWheels {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    </style>
+</head>
+<body>
+    <h1>Car made with HTML and CSS</h1>
+    <div class="car">
+        <div class="door"></div>
+        <div class="wheel wheel-front"></div>
+        <div class="wheel wheel-back"></div>
+    </div>
+</body>
+</html>

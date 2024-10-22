@@ -1,0 +1,9 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image:url('imgs/bg.jpg');
+    background-size: cover;
+}
+.list-style {
+    list-style: none;
+}
